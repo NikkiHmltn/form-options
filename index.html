@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <!-- some common inputs, but always use a <label> in forms! -->
+            <!-- <h3>Common < input > tags</h3> -->
+            <div style="width: 400px">
+                <h3>Fun fact! You can share code in html thanks to the <code> < code >
+                const greetings = () => {
+                    console.log("hello!")
+                }
+            < /code ></code>Tags!</h3>
+            </div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Type your username here" name="username">
+        <br>
+        <var>        <br></var>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Type a valid email here" name="email">
+        <br>
+        <br>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Type your password here" name="password">
+        <br>
+        <br>
+        <br>
+        <label for="textarea">Tell us about yourself!</label>
+        <textarea style="height: 100px" name="textarea">TYPE IN HERE</textarea>
+        <br>
+        <br>
+        <br>
+        <label for="checkbox">Click Our Checkbox!</label>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <br>
+        <br>
+        <br>
+        <label for="radioBtn">Radio buttons :)</label>
+        <input type="radio" id="radioBtn" name="radioBtn">
+        <input type="radio" id="radioBtn" name="radioBtn">
+        <br>
+        <br>
+        <br>
+        <label for="rangeScale">What's The range of pay you want?</label>
+        <input type="range" id="rangeScale" name="range" min=50000 max=150000>
+        <br>        <br>
+        <br>
+        <label for="dateCal">What's your favorite day of any year?</label>
+        <input type="date" id="dateCal" name="dateCal">
+        <br>
+        <div style="width: 500px">
+            <h3>The select tag! Inbetween the tags is where your option tags for your dropdown will go</h3>
+        </div>
+
+        <!-- select tag is a dropdown. options always have a value because they cant read between the tags -->
+        <label for="color">Choose a color:</label>
+        <select name="color" id="color">
+          <option value="pink">Pink</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+          <option value="grey">Grey</option>
+        </select> 
+
+        <!-- you can also group like-items with optgroup -->
+        <label for="city">Choose a city:</label>
+        <select  name="city" id="city">
+          <optgroup label="California">
+            <option value="LA">Los Angeles</option>
+            <option value="SAC">Sacramento</option>
+          </optgroup>
+          <optgroup label="Nevada">
+            <option value="LV">Las Vegas</option>
+            <option value="RNO">Reno</option>
+          </optgroup>
+        </select> 
+        <!-- https://www.w3schools.com/html/html_form_elements.asp tons more information including really useful properties for your tags suchas 'required', 'autocomplete', 'checked', etc... -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
